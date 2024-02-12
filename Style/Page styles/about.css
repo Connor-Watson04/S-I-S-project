@@ -1,0 +1,21 @@
+.aboutus-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4rem;
+  gap: 2rem;
+  min-height: 1000px;
+}
+.aboutus-title,
+.aboutus-text {
+  width: 500px;
+}
+.aboutus-title {
+  font-size: 32px;
+}
+.aboutus-text {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0;
+}

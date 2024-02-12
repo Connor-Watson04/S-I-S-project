@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.banner {
+  height: 150px;
+  background-color: #252553;
+  padding-left: 2rem;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 4.6rem;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 350px 550px 450px;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search {
+  width: 550px;
+  padding: 1rem 0.8rem 1rem 2rem;
+  border-radius: 50px;
+  justify-self: center;
+  border: none;
+  font-size: 16px;
+}
+.Logo {
+  height: 150px;
+  cursor: pointer;
+}
+.tabs {
+  display: flex;
+  gap: 2rem;
+  justify-self: center;
+}
+.Search-bar,
+.form {
+  width: 615px;
+}
+.navigation-link {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 215, 215);
+  background-color: rgb(119, 0, 0);
+  padding: 0.8rem 1.2rem;
+  border: 1.5px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+}
+
+.basket-icon {
+  height: 15px;
+}
+
+.footer {
+  background-color: rgb(57, 56, 57);
+  padding: 3rem;
+}
+.footer-logo {
+  height: 100px;
+}
+.apologies {
+  color: #ebebeb;
+  width: 400px;
+}
+.Our-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 450px 400px 300px;
+  gap: 7rem;
+}
+.Details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.social-links,
+.Detail-links {
+  color: #3c8af0;
+  width: 150px;
+}
+
+.social-links:active,
+.social-links:hover,
+.Detail-links:active,
+.Detail-links:hover {
+  color: #2121b6;
+}
+.footer-social-icons {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.footer-icon {
+  color: #d8d8d8;
+  cursor: pointer;
+}
+.yt:hover,
+.yt:active {
+  color: #ff0000;
+}
+.twitch:hover,
+.twitch:active {
+  color: #6705d8;
+}
+.fb:hover,
+.fb:active {
+  color: #356ee9;
+}
+.twitter:hover,
+.twitter:active {
+  color: #00e1ff;
+}
+.insta:hover,
+.insta:active {
+  color: #cd06ff;
+}
