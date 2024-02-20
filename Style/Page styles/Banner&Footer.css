@@ -139,6 +139,7 @@ body {
   height: 110px;
   width: 240px;
   position: absolute;
+  z-index: 5;
   right: 10px;
   top: 10px;
   background-color: #fff;
@@ -175,4 +176,30 @@ body {
 .account-tab-btn:hover,
 .account-tab-btn:active {
   background-color: #ececec;
+}
+.basket-tab {
+  position: absolute;
+  z-index: 5;
+  background-color: #fff;
+  width: 300px;
+  height: 700px;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  visibility: hidden;
+}
+.empty-cart {
+  color: #808080;
+  position: relative;
+  top: 300px;
+  left: 90px;
+}
+.checkout-btn {
+  background-color: #cf0d0d;
+  color: #ebebeb;
+  padding: 0.6rem 5rem;
+  position: relative;
+  top: 600px;
+  left: 50px;
+  cursor: pointer;
 }
