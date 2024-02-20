@@ -8,22 +8,25 @@ body {
 }
 
 .banner {
-  height: 150px;
+  height: 120px;
   background-color: #252553;
   padding-left: 2rem;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
   margin-bottom: 4.6rem;
 }
+.Banner-logo {
+  width: 215px;
+}
 
 .navigation {
   display: grid;
-  grid-template-columns: 350px 550px 450px;
+  grid-template-columns: 250px 450px 550px;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .search {
-  width: 550px;
+  width: 500px;
   padding: 1rem 0.8rem 1rem 2rem;
   border-radius: 50px;
   justify-self: center;
@@ -31,7 +34,7 @@ body {
   font-size: 16px;
 }
 .Logo {
-  height: 150px;
+  height: 100px;
   cursor: pointer;
 }
 .tabs {
@@ -52,6 +55,7 @@ body {
   padding: 0.8rem 1.2rem;
   border: 1.5px solid rgba(0, 0, 0, 0.4);
   border-radius: 50px;
+  font-size: 16px;
 }
 
 .basket-icon {
