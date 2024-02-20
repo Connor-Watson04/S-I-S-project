@@ -134,3 +134,45 @@ body {
 .insta:active {
   color: #cd06ff;
 }
+.Account-tab {
+  display: flex;
+  height: 110px;
+  width: 240px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  visibility: hidden;
+}
+.account-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 240px;
+}
+.account-tab-btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+}
+.sign-up {
+  color: #cf0d0d;
+}
+
+.account-tab-btn:nth-child(2) {
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+}
+
+.close {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.account-tab-btn:hover,
+.account-tab-btn:active {
+  background-color: #ececec;
+}
