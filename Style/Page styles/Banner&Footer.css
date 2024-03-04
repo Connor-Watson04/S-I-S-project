@@ -134,6 +134,11 @@ body {
 .insta:active {
   color: #cd06ff;
 }
+
+.Account-open {
+  visibility: visible;
+}
+
 .Account-tab {
   display: flex;
   height: 110px;
