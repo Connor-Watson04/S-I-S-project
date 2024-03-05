@@ -1,0 +1,35 @@
+body {
+  background-color: #d1d1d1;
+}
+
+.signin-container {
+  margin: 10rem 30rem;
+}
+
+.signin-body {
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+
+.signin-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-form div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  margin: 1rem;
+}
+
+.login-btn {
+  margin: 0 12rem;
+  padding: 0.6rem 2rem;
+  border-radius: 50px;
+  color: rgb(255, 215, 215);
+  background-color: rgb(175, 0, 0);
+}
