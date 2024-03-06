@@ -1,35 +1,84 @@
 body {
   background-color: #d1d1d1;
 }
-
 .signin-container {
-  margin: 10rem 30rem;
-}
-
-.signin-body {
   background-color: #fff;
-  padding: 1rem 2rem;
+  width: 550px;
+  height: 450px;
+  margin: 5rem 30rem;
+  display: flex;
+  box-shadow: 0px 5px 12px rgba(73, 72, 72, 0.404);
+  border-radius: 4px;
 }
 
 .signin-head {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  width: 550px;
+  border-bottom: 1px solid #7c737383;
 }
-
-.login-form div {
+/* Login Section */
+.login-tab {
+  padding: 2rem 4rem;
+  z-index: 6;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.createAcc-form,
+.login-form {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.6rem;
-  margin: 1rem;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.signin-titles {
+  border: none;
+  border-bottom: 3px solid #5555556b;
+  background-color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.signin-titles:hover {
+  border-bottom: 3px solid #00d9ff;
+}
+.signin-titles:focus,
+.signin-titles:active {
+  border-bottom: 3px solid #00c7eb;
 }
 
 .login-btn {
-  margin: 0 12rem;
-  padding: 0.6rem 2rem;
-  border-radius: 50px;
+  padding: 0.4rem 5rem;
   color: rgb(255, 215, 215);
-  background-color: rgb(175, 0, 0);
+  background-color: rgb(119, 0, 0);
+  margin: 0 6rem;
+}
+
+.forgot-pass {
+  position: absolute;
+  left: 330px;
+  top: 95px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.help-link {
+  position: relative;
+  top: 30px;
+  left: 130px;
+}
+
+/*Account Tab*/
+
+.createAcc-tab {
+  padding: 2rem 4rem;
+  z-index: 7;
+  opacity: 0;
+  position: relative;
+  top: -216.5px;
+  left: 0px;
 }
