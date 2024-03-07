@@ -61,7 +61,7 @@ body {
 .forgot-pass {
   position: absolute;
   left: 330px;
-  top: 95px;
+  top: 120px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -72,13 +72,19 @@ body {
   left: 130px;
 }
 
+#email-input,
+#password-input {
+  padding: 5px 5px 5px 10px;
+  margin-bottom: 1rem;
+}
+
 /*Account Tab*/
 
 .createAcc-tab {
   padding: 2rem 4rem;
   z-index: 7;
-  opacity: 0;
+  visibility: hidden;
   position: relative;
-  top: -216.5px;
+  top: -236px;
   left: 0px;
 }
