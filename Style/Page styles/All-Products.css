@@ -293,20 +293,29 @@ h4 {
   padding-left: 0.6rem;
   gap: 1rem;
 }
-.Classic-banner {
+.Popular-banner {
   color: #fff;
   font-weight: 700;
   text-align: center;
   position: relative;
-  top: -450px;
-  left: -50px;
-  transform: rotate(-49deg);
+  top: -475px;
+  left: 180px;
 }
-.classic-text {
-  background-color: #2121b6;
+.Popular-text {
+  background-color: #eb8e16;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 10px;
   color: #fff;
   font-weight: 700;
   text-align: center;
+
+  cursor: pointer;
+}
+
+.Popular-icon {
+  position: relative;
+  top: 1px;
+  margin-right: 1px;
 }
 
 /* Product Pages */
