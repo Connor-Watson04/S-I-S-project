@@ -16,7 +16,6 @@
 .type,
 .colours {
   margin-bottom: 2.4rem;
-  padding-left: 1rem;
 }
 
 .filter {
@@ -58,6 +57,13 @@ h4 {
   padding: 0;
   position: relative;
   left: 20px;
+  height: 250px;
+}
+
+.product-image {
+  padding: 0;
+  position: relative;
+  left: 40px;
   height: 250px;
 }
 
@@ -292,7 +298,9 @@ h4 {
   align-items: center;
   padding-left: 0.6rem;
   gap: 1rem;
+  border-top: 1px solid #000;
 }
+
 .Popular-banner {
   color: #fff;
   font-weight: 700;
@@ -308,8 +316,42 @@ h4 {
   color: #fff;
   font-weight: 700;
   text-align: center;
-
   cursor: pointer;
+}
+
+.Limited-banner {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: -480px;
+  left: 180px;
+}
+
+.Limited-text {
+  background-color: #000000;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 10px;
+  color: #f3cc1c;
+  font-family: "Carattere";
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.small-prod-head {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.fancy {
+  font-family: "Carattere";
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 .Popular-icon {
