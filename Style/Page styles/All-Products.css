@@ -507,3 +507,36 @@ h4 {
 .slider-ball-bottom {
   left: 143px;
 }
+
+.All-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 6px;
+}
+.dead-pagination {
+  background: none;
+  border: none;
+}
+
+.pagination-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.double-digi-pag {
+  padding: 0.8rem;
+  margin-right: 0;
+}
+.pagination-icon {
+  cursor: pointer;
+  height: 24px;
+  width: 26px;
+  background-color: none;
+}
