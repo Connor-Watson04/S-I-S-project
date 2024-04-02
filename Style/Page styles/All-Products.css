@@ -536,7 +536,22 @@ h4 {
 }
 .pagination-icon {
   cursor: pointer;
+  border-radius: 50px;
   height: 24px;
   width: 26px;
   background-color: none;
+}
+
+.pagination-icon:hover {
+  color: #2121b6;
+}
+
+.pagination-btn:hover {
+  background-color: #2121b6;
+  color: #ffffff;
+}
+.pagination-btn:active {
+  background-color: #fafafa;
+  color: #000;
+  outline: 3px solid #2121b6;
 }
