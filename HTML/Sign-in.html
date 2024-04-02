@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/Style/Page styles/All-Products.css" rel="stylesheet" />
+    <link href="Style/Page styles/Home.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/Style/Page styles/Banner&Footer.css" rel="stylesheet" />
+    <link href="/Style/Page styles/signin.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Images/Merch/Team/Logo/Tab Logo.png"
+    />
+
+    <script src="Script.js"></script>
+
+    <title>S-I-S SQUAD</title>
+  </head>
+  <body>
+    <section class="landing-view">
+      <div class="content">
+        <div class="banner">
+          <div class="navigation">
+            <a href="/Home.html" class="Banner-logo">
+              <img
+                class="Logo"
+                src="/Images/Merch/Team/Logo/S-I-S Logo.png"
+                alt="Sis squad logo"
+              />
+            </a>
+            <div class="Search-bar">
+              <form class="form">
+                <input
+                  class="search"
+                  type="search"
+                  name="search"
+                  placeholder="Search"
+                />
+              </form>
+            </div>
+            <div class="tabs">
+              <a href="/Home.html" class="navigation-link">Home</a>
+              <a href="/HTML/All.html" class="navigation-link All">View All</a>
+              <a href="#" class="navigation-link">Best Sellers!</a>
+              <a href="#" class="navigation-link">
+                <ion-icon name="cart"></ion-icon>
+                Basket</a
+              >
+            </div>
+          </div>
+          <div class="basket-tab">
+            <span class="basket-contents">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="close"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="empty-cart">Your Cart is empty</p>
+              <button class="checkout-btn">checkout</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="signin-container">
+      <div class="signin-body">
+        <div class="signin-head">
+          <button class="signin-titles login-title">Sign-in</button>
+          <button class="signin-titles account-title">Create Account</button>
+        </div>
+        <div class="login-tab">
+          <form>
+            <div class="login-form">
+              <label class="email-lable" for="email-input"
+                >Enter your email</label
+              >
+              <input
+                type="email"
+                name="email-input"
+                id="email-input"
+                required
+              />
+            </div>
+            <div class="login-form">
+              <a href="/HTML/forgot-password.html" class="forgot-pass"
+                >Forgotten password?</a
+              >
+              <label class="password-label" for="password-input"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password-input"
+                name="password-input"
+                required
+              />
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+          </form>
+          <a class="help-link" href="/HTML/footer-links/FAQS.html"
+            >Need some help?</a
+          >
+        </div>
+        <div class="createAcc-tab">
+          <form>
+            <div class="createAcc-form">
+              <label class="email-lable" for="firstName-input"
+                >Enter your first name</label
+              >
+              <input
+                type="text"
+                name="firstName-input"
+                id="firstName-input"
+                required
+              />
+            </div>
+            <div class="login-form">
+              <label class="email-lable" for="lastName-input"
+                >Enter your last name</label
+              >
+              <input
+                type="text"
+                name="lastName-input"
+                id="lastName-input"
+                required
+              />
+            </div>
+
+            <div class="createAcc-form">
+              <label class="email-lable" for="email-input"
+                >Enter your email</label
+              >
+              <input
+                type="email"
+                name="email-input"
+                id="email-input"
+                required
+              />
+            </div>
+            <div class="createAcc-form">
+              <label class="password-label" for="Password1-input"
+                >Enter a Password</label
+              >
+              <input
+                type="password"
+                id="password1-input"
+                name="password1-input"
+                required
+              />
+            </div>
+            <div class="createAcc-form">
+              <label class="password-label" for="password2-input"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                id="password2-input"
+                name="password2-input"
+                required
+              />
+            </div>
+            <button type="submit" class="login-btn">Create</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-content">
+        <div class="Footer-img">
+          <img
+            class="footer-logo"
+            src="/Images/Merch/Team/Logo/Footer Logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="footer-grid">
+          <div class="footer-grid-left">
+            <p class="apologies">
+              Apologies as we currently do not have a physical location for you
+              to reach out to us. However we have our social media and content
+              platforms where we may be reachable.
+            </p>
+          </div>
+          <div class="Details">
+            <a class="Detail-links" href="/HTML/footer-links/About-us.html"
+              >About Us</a
+            >
+            <a class="Detail-links" href="#">FAQs</a>
+            <a class="Detail-links" href="#">Contact Us</a>
+            <a class="Detail-links" href="#">Terms & Service</a>
+            <a class="Detail-links" href="#">Privacy Policy</a>
+          </div>
+          <div class="Our-links">
+            <a class="social-links" href="#">N1ghtW0lf04</a>
+            <a class="social-links" href="https://beacons.ai/ferralwolf2003"
+              >FerralWolf2003</a
+            >
+            <a class="social-links" href="#">ibedrippinYT</a>
+          </div>
+        </div>
+        <div class="footer-social-icons">
+          <ion-icon class="footer-icon yt" name="logo-youtube"></ion-icon>
+          <ion-icon class="footer-icon twitch" name="logo-twitch"></ion-icon>
+          <ion-icon class="footer-icon fb" name="logo-facebook"></ion-icon>
+          <ion-icon class="footer-icon twitter" name="logo-twitter"></ion-icon>
+          <ion-icon class="footer-icon insta" name="logo-instagram"></ion-icon>
+          <p class="copyright">&copy; 2026 S-I-S SQUAD</p>
+        </div>
+      </span>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -9,10 +9,16 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/Images/Tab Logo.png"
+      href="/Images/Merch/Team/Logo/Tab Logo.png"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
       rel="stylesheet"
     />
     <title>S-I-S SQUAD</title>
@@ -24,7 +30,7 @@
           <a href="/Home.html" class="Banner-logo">
             <img
               class="Logo"
-              src="/Images/S-I-S Logo.png"
+              src="/Images/Merch/Team/Logo/S-I-S Logo.png"
               alt="Sis squad logo"
             />
           </a>
@@ -41,35 +47,17 @@
           <div class="tabs">
             <a href="/Home.html" class="navigation-link All">Home</a>
             <a href="#" class="navigation-link">Best Sellers!</a>
-            <a href="#" class="navigation-link">
+            <a class="navigation-link basket">
               <ion-icon class="basket-icon" name="cart"></ion-icon>
               Basket
             </a>
-            <button class="navigation-link">
+            <a href="/HTML/Sign-in.html" class="navigation-link account">
               <ion-icon name="person-circle-outline"></ion-icon>
-              Account
-            </button>
+              Sign-in
+            </a>
           </div>
         </div>
-        <div class="Account-tab">
-          <span class="account-buttons">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="close"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
-                clip-rule="evenodd"
-              />
-            </svg>
 
-            <button class="account-tab-btn Login">Login</button>
-            <button class="account-tab-btn sign-up">Sign Up</button>
-          </span>
-        </div>
         <div class="basket-tab">
           <span class="basket-contents">
             <svg
@@ -253,7 +241,410 @@
         <div class="product-grid">
           <div class="Product-tab all-tab-size">
             <img
-              src="/Images/Merch/N1ghtW0lf04 hoodie.png"
+              src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-Mamodel-blue.png"
+              class="product-image"
+              alt="hoodie"
+            />
+            <div class="tab-header">
+              <p class="product-header-size">N1ghtW0lf04 Cap</p>
+              <span class="available-colours position-blocks">
+                <div class="coloured-blocks black-block"></div>
+                <div class="coloured-blocks white-block"></div>
+                <div class="coloured-blocks red-block"></div>
+              </span>
+            </div>
+            <div class="Product-description">
+              <div class="prod-content-grid">
+                <div class="prod-info">
+                  <span class="shipping shipping-column">
+                    <svg
+                      class="lorrie"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+                      />
+                    </svg>
+                    <p class="free">Free Shipping</p>
+                  </span>
+
+                  <span class="pricing">
+                    <p class="original-price">£34.99</p>
+                    <p class="sale-price">£24.99</p>
+                  </span>
+                  <span class="product-page-links">
+                    <a
+                      href="/HTML/Products/N1ghtW0lf04/Hats/LE-nightwolf-cap.html"
+                      class="product-page-link"
+                      >More Info</a
+                    >
+                  </span>
+                </div>
+                <div class="prod-payment">
+                  <form class="product-form">
+                    <div class="form-grid">
+                      <div class="clothes-sizing-label">
+                        <label class="product-label size-label" for="Sizes"
+                          >Sizes</label
+                        >
+                      </div>
+                      <div class="clothes-sizing-select">
+                        <select
+                          required
+                          name="Sizes"
+                          class="product-input sizes-input"
+                        >
+                          <option>S</option>
+                          <option>M</option>
+                          <option>L</option>
+                          <option>XL</option>
+                        </select>
+                      </div>
+                      <div class="clothes-quantity-label">
+                        <label
+                          for="quantity"
+                          class="product-label quantity-label"
+                          >Quantity</label
+                        >
+                      </div>
+                      <div class="clothes-quantity-input">
+                        <input
+                          required
+                          type="number"
+                          class="product-input quantity"
+                          name="quantity"
+                          min="1"
+                          max="10"
+                          value="1"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-btn">
+                      <button class="cart-btn">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        Add to cart
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="Popular-banner Limited-banner">
+                  <p class="Popular-text Limited-text">Limited</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Product-tab all-tab-size">
+            <img
+              src="/Images/Merch/JellyBelly/Hats/LE-Midge-Bucket-hat-Femodel.png"
+              class="product-image"
+              alt="hoodie"
+            />
+            <div class="tab-header">
+              <p class="product-header-size">Midge Bucket Hat</p>
+              <span class="available-colours position-blocks">
+                <div class="coloured-blocks black-block"></div>
+                <div class="coloured-blocks white-block"></div>
+                <div class="coloured-blocks red-block"></div>
+              </span>
+            </div>
+            <div class="Product-description">
+              <div class="prod-content-grid">
+                <div class="prod-info">
+                  <span class="shipping shipping-column">
+                    <svg
+                      class="lorrie"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+                      />
+                    </svg>
+                    <p class="free">Free Shipping</p>
+                  </span>
+
+                  <span class="pricing">
+                    <p class="original-price">£29.99</p>
+                    <p class="sale-price">£24.99</p>
+                  </span>
+                  <span class="product-page-links">
+                    <a
+                      href="/HTML/Products/JellyBellyYT/Hats/midge-LE-Bucket-hat.html"
+                      class="product-page-link"
+                      >More Info</a
+                    >
+                  </span>
+                </div>
+                <div class="prod-payment">
+                  <form class="product-form">
+                    <div class="form-grid">
+                      <div class="clothes-sizing-label">
+                        <label class="product-label size-label" for="Sizes"
+                          >Sizes</label
+                        >
+                      </div>
+                      <div class="clothes-sizing-select">
+                        <select
+                          required
+                          name="Sizes"
+                          class="product-input sizes-input"
+                        >
+                          <option>S</option>
+                          <option>M</option>
+                          <option>L</option>
+                        </select>
+                      </div>
+                      <div class="clothes-quantity-label">
+                        <label
+                          for="quantity"
+                          class="product-label quantity-label"
+                          >Quantity</label
+                        >
+                      </div>
+                      <div class="clothes-quantity-input">
+                        <input
+                          required
+                          type="number"
+                          class="product-input quantity"
+                          name="quantity"
+                          min="1"
+                          max="10"
+                          value="1"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-btn">
+                      <button class="cart-btn">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        Add to cart
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="Popular-banner Limited-banner">
+                  <p class="Popular-text Limited-text">Limited</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Product-tab all-tab-size">
+            <img
+              src="/Images/Merch/FerralWolf/Hats/LE-FerralWolf-Cap-Femodel.png"
+              class="product-image"
+              alt="hoodie"
+            />
+            <div class="tab-header">
+              <p class="product-header-size">FerralWolf Dad Cap</p>
+              <span class="available-colours position-blocks">
+                <div class="coloured-blocks black-block"></div>
+                <div class="coloured-blocks white-block"></div>
+                <div class="coloured-blocks red-block"></div>
+              </span>
+            </div>
+            <div class="Product-description">
+              <div class="prod-content-grid">
+                <div class="prod-info">
+                  <span class="shipping shipping-column">
+                    <svg
+                      class="lorrie"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+                      />
+                    </svg>
+                    <p class="free">Free Shipping</p>
+                  </span>
+
+                  <span class="pricing">
+                    <p class="original-price">£29.99</p>
+                    <p class="sale-price">£24.99</p>
+                  </span>
+                  <span class="product-page-links">
+                    <a
+                      href="/HTML/Products/FerralWolf/Hats/LE-FerralWolf-cap.html"
+                      class="product-page-link"
+                      >More Info</a
+                    >
+                  </span>
+                </div>
+                <div class="prod-payment">
+                  <form class="product-form">
+                    <div class="form-grid">
+                      <div class="clothes-sizing-label">
+                        <label class="product-label size-label" for="Sizes"
+                          >Sizes</label
+                        >
+                      </div>
+                      <div class="clothes-sizing-select">
+                        <select
+                          required
+                          name="Sizes"
+                          class="product-input sizes-input"
+                        >
+                          <option>S</option>
+                          <option>M</option>
+                          <option>L</option>
+                        </select>
+                      </div>
+                      <div class="clothes-quantity-label">
+                        <label
+                          for="quantity"
+                          class="product-label quantity-label"
+                          >Quantity</label
+                        >
+                      </div>
+                      <div class="clothes-quantity-input">
+                        <input
+                          required
+                          type="number"
+                          class="product-input quantity"
+                          name="quantity"
+                          min="1"
+                          max="10"
+                          value="1"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-btn">
+                      <button class="cart-btn">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        Add to cart
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="Popular-banner Limited-banner">
+                  <p class="Popular-text Limited-text">Limited</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Product-tab all-tab-size">
+            <img
+              src="/Images/Merch/N1ghtW0lf04/Jumper/L.E NW-white-front-modelled-jumper.png"
+              class="product-image"
+              alt="hoodie"
+            />
+            <div class="tab-header">
+              <p class="product-header-size">N1ghtW0lf04 Jumper</p>
+              <span class="available-colours position-blocks">
+                <div class="coloured-blocks black-block"></div>
+                <div class="coloured-blocks white-block"></div>
+                <div class="coloured-blocks red-block"></div>
+              </span>
+            </div>
+            <div class="Product-description">
+              <div class="prod-content-grid">
+                <div class="prod-info">
+                  <span class="shipping shipping-column">
+                    <svg
+                      class="lorrie"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+                      />
+                    </svg>
+                    <p class="free">Free Shipping</p>
+                  </span>
+
+                  <span class="pricing">
+                    <p class="original-price">£44.99</p>
+                    <p class="sale-price">£29.99</p>
+                  </span>
+                  <span class="product-page-links">
+                    <a
+                      href="/HTML/Products/N1ghtW0lf04/Jumpers/LE-NW-JP1.html"
+                      class="product-page-link"
+                      >More Info</a
+                    >
+                  </span>
+                </div>
+                <div class="prod-payment">
+                  <form class="product-form">
+                    <div class="form-grid">
+                      <div class="clothes-sizing-label">
+                        <label class="product-label size-label" for="Sizes"
+                          >Sizes</label
+                        >
+                      </div>
+                      <div class="clothes-sizing-select">
+                        <select
+                          required
+                          name="Sizes"
+                          class="product-input sizes-input"
+                        >
+                          <option>S</option>
+                          <option>M</option>
+                          <option>L</option>
+                          <option>XL</option>
+                        </select>
+                      </div>
+                      <div class="clothes-quantity-label">
+                        <label
+                          for="quantity"
+                          class="product-label quantity-label"
+                          >Quantity</label
+                        >
+                      </div>
+                      <div class="clothes-quantity-input">
+                        <input
+                          required
+                          type="number"
+                          class="product-input quantity"
+                          name="quantity"
+                          min="1"
+                          max="10"
+                          value="1"
+                        />
+                      </div>
+                    </div>
+                    <div class="product-btn">
+                      <button class="cart-btn">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        Add to cart
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="Popular-banner Limited-banner">
+                  <p class="Popular-text Limited-text">Limited</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Product-tab all-tab-size">
+            <img
+              src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie.png"
               class="hoodie night-padding small-hoodie"
               alt="hoodie"
             />
@@ -294,7 +685,7 @@
                   </span>
                   <span class="product-page-links">
                     <a
-                      href="/HTML/Products/N1ghtW0lf04.html"
+                      href="/HTML/Products/N1ghtW0lf04/Hoodies/N1ghtW0lf04.html"
                       class="product-page-link"
                       >More Info</a
                     >
@@ -347,15 +738,18 @@
                     </div>
                   </form>
                 </div>
-                <div class="Classic-banner">
-                  <p class="classic-text">Classic</p>
+                <div class="Popular-banner">
+                  <p class="Popular-text">
+                    <ion-icon class="Popular-icon" name="sparkles"></ion-icon>
+                    Popular
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="Product-tab all-tab-size">
             <img
-              src="/Images/Merch/JellyBellyyt hoodie.png"
+              src="/Images/Merch/JellyBelly/Hoodie/JellyBellyyt hoodie.png"
               class="hoodie small-hoodie"
               alt="hoodie"
             />
@@ -395,7 +789,7 @@
                   </span>
                   <span class="product-page-links">
                     <a
-                      href="/HTML/Products/jellbelly-classic-eco-hoodie.html"
+                      href="/HTML/Products/JellyBellyYT/Hoodies/jellbelly-classic-eco-hoodie.html"
                       class="product-page-link"
                       >More Info</a
                     >
@@ -448,15 +842,18 @@
                     </div>
                   </form>
                 </div>
-                <div class="Classic-banner">
-                  <p class="classic-text">Classic</p>
+                <div class="Popular-banner">
+                  <p class="Popular-text">
+                    <ion-icon class="Popular-icon" name="sparkles"></ion-icon>
+                    Popular
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="Product-tab all-tab-size">
             <img
-              src="/Images/Merch/FerralWolf2003 hoodie.png"
+              src="/Images/Merch/FerralWolf/Hoodie/FerralWolf2003 hoodie.png"
               class="hoodie small-hoodie"
               alt="hoodie"
             />
@@ -496,7 +893,7 @@
                   </span>
                   <span class="product-page-links">
                     <a
-                      href="/HTML/Products/N1ghtW0lf04.html"
+                      href="/HTML/Products/FerralWolf/Hoodies/Ferralwolf2003-eco-hoodie.html"
                       class="product-page-link"
                       >More Info</a
                     >
@@ -549,15 +946,18 @@
                     </div>
                   </form>
                 </div>
-                <div class="Classic-banner">
-                  <p class="classic-text">Classic</p>
+                <div class="Popular-banner">
+                  <p class="Popular-text">
+                    <ion-icon class="Popular-icon" name="sparkles"></ion-icon>
+                    Popular
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="Product-tab all-tab-size">
             <img
-              src="/Images/Merch/SIS hoodie.png"
+              src="/Images/Merch/Team/Hoodie/SIS hoodie.png"
               class="hoodie night-padding small-hoodie"
               alt="hoodie"
             />
@@ -597,7 +997,7 @@
                   </span>
                   <span class="product-page-links">
                     <a
-                      href="/HTML/Products/N1ghtW0lf04.html"
+                      href="/HTML/Products/Team/Hoodies/sis-squad-team-hoodie.html"
                       class="product-page-link"
                       >More Info</a
                     >
@@ -655,11 +1055,31 @@
           </div>
         </div>
       </div>
+      <div class="All-pagination">
+        <ion-icon class="pagination-icon" name="caret-back-outline"></ion-icon>
+        <span class="pagination-buttons">
+          <button class="pagination-btn">1</button>
+          <button class="pagination-btn">2</button>
+          <button class="pagination-btn">3</button>
+          <button class="dead-pagination">...</button>
+          <button class="pagination-btn">8</button>
+          <button class="pagination-btn">9</button>
+          <button class="pagination-btn double-digi-pag">10</button>
+        </span>
+        <ion-icon
+          class="pagination-icon"
+          name="caret-forward-outline"
+        ></ion-icon>
+      </div>
     </section>
     <footer class="footer">
       <span class="footer-content">
         <div class="Footer-img">
-          <img class="footer-logo" src="/Images/Footer Logo.png" alt="logo" />
+          <img
+            class="footer-logo"
+            src="/Images//Merch/Team/Logo/Footer Logo.png"
+            alt="logo"
+          />
         </div>
         <div class="footer-grid">
           <div class="footer-grid-left">
@@ -670,7 +1090,9 @@
             </p>
           </div>
           <div class="Details">
-            <a class="Detail-links" href="#">About Us</a>
+            <a class="Detail-links" href="/HTML/footer-links/About-us.html"
+              >About Us</a
+            >
             <a class="Detail-links" href="#">FAQs</a>
             <a class="Detail-links" href="#">Contact Us</a>
             <a class="Detail-links" href="#">Terms & Service</a>

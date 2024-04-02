@@ -16,7 +16,6 @@
 .type,
 .colours {
   margin-bottom: 2.4rem;
-  padding-left: 1rem;
 }
 
 .filter {
@@ -58,6 +57,13 @@ h4 {
   padding: 0;
   position: relative;
   left: 20px;
+  height: 250px;
+}
+
+.product-image {
+  padding: 0;
+  position: relative;
+  left: 40px;
   height: 250px;
 }
 
@@ -292,21 +298,68 @@ h4 {
   align-items: center;
   padding-left: 0.6rem;
   gap: 1rem;
+  border-top: 1px solid #000;
 }
-.Classic-banner {
+
+.Popular-banner {
   color: #fff;
   font-weight: 700;
   text-align: center;
   position: relative;
-  top: -450px;
-  left: -50px;
-  transform: rotate(-49deg);
+  top: -475px;
+  left: 180px;
 }
-.classic-text {
-  background-color: #2121b6;
+.Popular-text {
+  background-color: #eb8e16;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 10px;
   color: #fff;
   font-weight: 700;
   text-align: center;
+  cursor: pointer;
+}
+
+.Limited-banner {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: -485px;
+  left: 210px;
+  width: 100px;
+  z-index: 1;
+}
+
+.Limited-text {
+  background-color: #000000;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 10px;
+  color: #f3cc1c;
+  font-family: "Carattere";
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.small-prod-head {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.fancy {
+  font-family: "Carattere";
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.Popular-icon {
+  position: relative;
+  top: 1px;
+  margin-right: 1px;
 }
 
 /* Product Pages */
@@ -453,4 +506,52 @@ h4 {
 }
 .slider-ball-bottom {
   left: 143px;
+}
+
+.All-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 6px;
+}
+.dead-pagination {
+  background: none;
+  border: none;
+}
+
+.pagination-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.double-digi-pag {
+  padding: 0.8rem;
+  margin-right: 0;
+}
+.pagination-icon {
+  cursor: pointer;
+  border-radius: 50px;
+  height: 24px;
+  width: 26px;
+  background-color: none;
+}
+
+.pagination-icon:hover {
+  color: #2121b6;
+}
+
+.pagination-btn:hover {
+  background-color: #2121b6;
+  color: #ffffff;
+}
+.pagination-btn:active {
+  background-color: #fafafa;
+  color: #000;
+  outline: 3px solid #2121b6;
 }
