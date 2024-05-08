@@ -173,7 +173,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.37);
 }
 
-.close {
+#close {
   cursor: pointer;
   height: 30px;
   width: 30px;
@@ -182,7 +182,12 @@ body {
 .account-tab-btn:active {
   background-color: #ececec;
 }
-.basket-tab {
+
+#basket-button {
+  padding: 10px 2rem;
+}
+
+#basket-tab {
   position: absolute;
   z-index: 5;
   background-color: #fff;
@@ -191,7 +196,13 @@ body {
   top: 0;
   right: 0;
   padding: 10px;
+  cursor: pointer;
+}
+
+.hidden-tab {
+  opacity: 0;
   visibility: hidden;
+  transition: 0.5s ease;
 }
 
 .empty-cart {

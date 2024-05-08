@@ -20,8 +20,6 @@
       href="/Images/Merch/Team/Logo/Tab Logo.png"
     />
 
-    <script src="Script.js"></script>
-
     <title>S-I-S SQUAD</title>
   </head>
   <body>
@@ -47,25 +45,27 @@
               </form>
             </div>
             <div class="tabs">
-              <a href="HTML/All.html" class="navigation-link All">View All</a>
-              <a href="#" class="navigation-link">Best Sellers!</a>
-              <a href="#" class="navigation-link">
-                <ion-icon name="cart"></ion-icon>
-                Basket</a
+              <a href="HTML/Header-links/All.html" class="navigation-link All"
+                >View All</a
               >
-              <a href="/HTML/Sign-in.html" class="navigation-link account">
+              <a href="#" class="navigation-link">Best Sellers!</a>
+              <button id="basket-button" class="navigation-link"></button>
+              <a
+                href="/HTML/Header-links/Sign-in.html"
+                class="navigation-link account"
+              >
                 <ion-icon name="person-circle-outline"></ion-icon>
                 Sign-in
               </a>
             </div>
           </div>
-          <div class="basket-tab">
+          <div id="basket-tab" class="hidden-tab">
             <span class="basket-contents">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="close"
+                id="close"
               >
                 <path
                   fill-rule="evenodd"
@@ -580,6 +580,7 @@
         </div>
       </span>
     </footer>
+    <script src="Script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
