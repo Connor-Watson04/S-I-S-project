@@ -202,13 +202,12 @@ body {
 .hidden-tab {
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s ease;
 }
 
 .empty-cart {
   color: #808080;
   position: relative;
-  top: 300px;
+  top: 280px;
   left: 90px;
 }
 .checkout-btn {
@@ -216,7 +215,7 @@ body {
   color: #ebebeb;
   padding: 0.6rem 5rem;
   position: relative;
-  top: 600px;
+  top: 570px;
   left: 50px;
   cursor: pointer;
 }

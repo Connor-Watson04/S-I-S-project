@@ -2,6 +2,7 @@
 
 const basketBtn = document.getElementById("basket-button");
 const basketTab = document.getElementById("basket-tab");
+const activeBasket = document.getElementById("active-basket");
 
 basketBtn.textContent = "basket";
 
