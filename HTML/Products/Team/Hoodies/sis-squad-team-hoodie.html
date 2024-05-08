@@ -42,10 +42,7 @@
           <div class="tabs">
             <a href="/Home.html" class="navigation-link All">Home</a>
             <a href="#" class="navigation-link">Best Sellers!</a>
-            <a href="#" class="navigation-link">
-              <ion-icon name="cart"></ion-icon>
-              Basket</a
-            >
+            <button id="basket-button" class="navigation-link"></button>
             <a href="/HTML/Sign-in.html" class="navigation-link account">
               <ion-icon name="person-circle-outline"></ion-icon>
               Sign-in
@@ -53,13 +50,13 @@
           </div>
         </div>
 
-        <div class="basket-tab">
+        <div id="basket-tab" class="hidden-tab">
           <span class="basket-contents">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="close"
+              id="close"
             >
               <path
                 fill-rule="evenodd"
@@ -352,6 +349,7 @@
         </div>
       </span>
     </footer>
+    <script src="/Script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
