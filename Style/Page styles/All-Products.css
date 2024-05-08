@@ -366,11 +366,13 @@
   border-radius: 3px;
 }
 
-.img-large {
-  margin-bottom: 2rem;
+#img-large {
+  margin: 0 0 2rem 2rem;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
-  height: 550px;
+  height: 500px;
+  width: 500px;
 }
+
 .Product-img-collage {
   display: grid;
   grid-template-columns: repeat(5, 100px);
@@ -388,6 +390,9 @@
   justify-content: center;
   cursor: pointer;
 }
+
+/*PDP image swap*/
+
 .product-info {
   margin-bottom: 1.6rem;
   width: 550px;
@@ -534,4 +539,12 @@
   height: 24px;
   width: 26px;
   background-color: none;
+}
+
+.pagination-btn:hover {
+  background-color: #2121b6;
+  color: #fff;
+}
+.pagination-icon:hover {
+  color: #2121b6;
 }
