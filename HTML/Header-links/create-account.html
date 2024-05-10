@@ -20,8 +20,6 @@
       href="/Images/Merch/Team/Logo/Tab Logo.png"
     />
 
-    <script src="Script.js"></script>
-
     <title>S-I-S SQUAD</title>
   </head>
   <body>
@@ -50,19 +48,16 @@
               <a href="/Home.html" class="navigation-link">Home</a>
               <a href="/HTML/All.html" class="navigation-link All">View All</a>
               <a href="#" class="navigation-link">Best Sellers!</a>
-              <a href="#" class="navigation-link">
-                <ion-icon name="cart"></ion-icon>
-                Basket</a
-              >
+              <button id="basket-button" class="navigation-link"></button>
             </div>
           </div>
-          <div class="basket-tab">
+          <div id="basket-tab" class="hidden-tab">
             <span class="basket-contents">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="close"
+                id="close"
               >
                 <path
                   fill-rule="evenodd"
@@ -80,42 +75,19 @@
     <section class="signin-container">
       <div class="signin-body">
         <div class="signin-head">
-          <button class="signin-titles login-title">Sign-in</button>
-          <button class="signin-titles account-title">Create Account</button>
-        </div>
-        <div class="login-tab">
-          <form>
-            <div class="login-form">
-              <label class="email-lable" for="email-input"
-                >Enter your email</label
-              >
-              <input
-                type="email"
-                name="email-input"
-                id="email-input"
-                required
-              />
-            </div>
-            <div class="login-form">
-              <a href="/HTML/forgot-password.html" class="forgot-pass"
-                >Forgotten password?</a
-              >
-              <label class="password-label" for="password-input"
-                >Password</label
-              >
-              <input
-                type="password"
-                id="password-input"
-                name="password-input"
-                required
-              />
-            </div>
-            <button type="submit" class="login-btn">Login</button>
-          </form>
-          <a class="help-link" href="/HTML/footer-links/FAQS.html"
-            >Need some help?</a
+          <a
+            class="signin-titles login-title"
+            href="/HTML/Header-links/Sign-in.html"
+            >Sign-in</a
           >
+          <a
+            class="signin-titles login-title active-page"
+            href="/HTML/Header-links/create-account.html"
+          >
+            Create Account
+          </a>
         </div>
+
         <div class="createAcc-tab">
           <form>
             <div class="createAcc-form">
@@ -126,17 +98,6 @@
                 type="text"
                 name="firstName-input"
                 id="firstName-input"
-                required
-              />
-            </div>
-            <div class="login-form">
-              <label class="email-lable" for="lastName-input"
-                >Enter your last name</label
-              >
-              <input
-                type="text"
-                name="lastName-input"
-                id="lastName-input"
                 required
               />
             </div>
@@ -174,7 +135,9 @@
                 required
               />
             </div>
-            <button type="submit" class="login-btn">Create</button>
+            <button type="submit" id="createAccount-btn" class="login-btn">
+              Create
+            </button>
           </form>
         </div>
       </div>
@@ -224,6 +187,7 @@
         </div>
       </span>
     </footer>
+    <script src="/Script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

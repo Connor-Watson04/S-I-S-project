@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Style/Page styles/Banner&Footer.css" rel="stylesheet" />
-    <link href="/Style/Page styles/All-Products.css" rel="stylesheet" />
+    <link
+      href="/Style/Page styles/Banner-links/Banner&Footer.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/Style/Page styles/Banner-links/All-Products.css"
+      rel="stylesheet"
+    />
     <link href="/Style/Active/Active.css" rel="stylesheet" />
     <link
       rel="icon"
@@ -20,6 +26,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Carattere&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="/Style/Page styles/PDP/N1ghtW0lf/NW-PRODS.css"
       rel="stylesheet"
     />
     <title>S-I-S SQUAD</title>
@@ -48,10 +58,7 @@
           <div class="tabs">
             <a href="/Home.html" class="navigation-link All">Home</a>
             <a href="#" class="navigation-link">Best Sellers!</a>
-            <a href="#" class="navigation-link">
-              <ion-icon name="cart"></ion-icon>
-              Basket</a
-            >
+            <button id="basket-button" class="navigation-link"></button>
             <a href="/HTML/Sign-in.html" class="navigation-link account">
               <ion-icon name="person-circle-outline"></ion-icon>
               Sign-in
@@ -59,13 +66,13 @@
           </div>
         </div>
 
-        <div class="basket-tab">
+        <div id="basket-tab" class="hidden-tab">
           <span class="basket-contents">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="close"
+              id="close"
             >
               <path
                 fill-rule="evenodd"
@@ -83,47 +90,49 @@
       <div class="product-info-grid">
         <div class="Product-images">
           <div class="Product-img-large">
-            <img
-              src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-Femodel-Blue.png"
-              class="img-large"
-              alt="nightwolf hoodie"
-            />
+            <div id="img-large" class="LE-NW-base-image-hat LE-NW-CAP"></div>
           </div>
           <div class="Product-img-collage">
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-Femodel-Blue.png"
+                src="/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Femodel-Blue.jpg"
                 class="img-small"
+                id="LE-NW-fem-blue"
               />
             </span>
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-FrontView-blue.png"
+                src="/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-FrontView-blue.jpg"
                 class="img-small"
+                id="LE-NW-front-blue"
               />
             </span>
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-Mamodel-blue.png"
+                src="/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Mamodel-blue.jpg"
                 class="img-small"
+                id="LE-NW-man-blue"
               />
             </span>
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-Femodel.png"
+                src="/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Femodel.jpg"
                 class="img-small"
+                id="LE-NW-fem-grey"
               />
             </span>
             <span class="collage-block">
               <img
                 class="img-small"
-                src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-FrontView.png"
+                src="/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-FrontView.jpg"
+                id="LE-NW-front-grey"
               />
             </span>
             <span class="collage-block block-middle-1">
               <img
                 class="img-small"
-                src="/Images/Merch/N1ghtW0lf04/Hats/LE-Nightwolf-Cap-Mamodel.png"
+                src="/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Mamodel.jpg"
+                id="LE-NW-man-grey"
               />
             </span>
           </div>
@@ -140,7 +149,7 @@
           </p>
 
           <span class="available-colours position-blocks block-margin">
-            <div class="coloured-blocks black-block"></div>
+            <div class="coloured-blocks blue-block"></div>
             <div class="coloured-blocks White-block"></div>
             <div class="coloured-blocks Grey-block"></div>
           </span>
@@ -344,6 +353,9 @@
         </div>
       </span>
     </footer>
+
+    <script src="/JavaScript/NW-PDPHat-Images.js"></script>
+    <script src="/Script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

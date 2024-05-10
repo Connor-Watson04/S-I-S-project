@@ -7,19 +7,10 @@
 }
 
 .grid-filter {
-  overflow: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-color: rgb(0, 0, 0);
-}
-
-.type,
-.colours {
-  margin-bottom: 2.4rem;
+  border-right: 2px solid rgb(0, 0, 0);
 }
 
 .filter {
-  border-right: 1px solid rgb(0, 0, 0);
   display: grid;
   grid-template-columns: 130px 20px;
   gap: 1rem;
@@ -32,10 +23,14 @@
   width: 20px;
   margin: 0;
 }
-h4 {
-  width: 180px;
-  padding-top: 1.2rem;
-  border-top: 1px solid rgb(0, 0, 0);
+
+.type {
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+.type,
+.colours {
+  margin-bottom: 2.4rem;
 }
 
 /* Product section */
@@ -130,6 +125,11 @@ h4 {
   width: 20px;
   outline: 1px solid #000;
 }
+
+.blue-block {
+  background-color: #0a82d1;
+}
+
 .black-block {
   background-color: #000;
 }
@@ -371,11 +371,13 @@ h4 {
   border-radius: 3px;
 }
 
-.img-large {
-  margin-bottom: 2rem;
+#img-large {
+  margin: 0 0 2rem 2rem;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
-  height: 550px;
+  height: 500px;
+  width: 500px;
 }
+
 .Product-img-collage {
   display: grid;
   grid-template-columns: repeat(5, 100px);
@@ -393,6 +395,9 @@ h4 {
   justify-content: center;
   cursor: pointer;
 }
+
+/*PDP image swap*/
+
 .product-info {
   margin-bottom: 1.6rem;
   width: 550px;
@@ -542,16 +547,10 @@ h4 {
   background-color: none;
 }
 
-.pagination-icon:hover {
-  color: #2121b6;
-}
-
 .pagination-btn:hover {
   background-color: #2121b6;
-  color: #ffffff;
+  color: #fff;
 }
-.pagination-btn:active {
-  background-color: #fafafa;
-  color: #000;
-  outline: 3px solid #2121b6;
+.pagination-icon:hover {
+  color: #2121b6;
 }

@@ -42,13 +42,12 @@ body {
   background-color: #fff;
   font-size: 20px;
   cursor: pointer;
+  text-decoration: none;
+  color: #161616;
+  padding: 0 1rem;
 }
 .signin-titles:hover {
   border-bottom: 3px solid #00d9ff;
-}
-.signin-titles:focus,
-.signin-titles:active {
-  border-bottom: 3px solid #00c7eb;
 }
 
 .login-btn {
@@ -78,13 +77,17 @@ body {
   margin-bottom: 1rem;
 }
 
+.active-page {
+  border-bottom: 3px solid #00c7eb;
+}
+
 /*Account Tab*/
 
 .createAcc-tab {
   padding: 2rem 4rem;
   z-index: 7;
-  visibility: hidden;
+
   position: relative;
-  top: -236px;
+  top: 0px;
   left: 0px;
 }

@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Style/Page styles/All-Products.css" rel="stylesheet" />
-    <link href="Style/Page styles/Home.css" rel="stylesheet" />
+    <link
+      href="/Style/Page styles/Banner-links/All-Products.css"
+      rel="stylesheet"
+    />
+    <link href="Style/Page styles/Banner-links/Home.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="/Style/Page styles/Banner&Footer.css" rel="stylesheet" />
+    <link
+      href="/Style/Page styles/Banner-links/Banner&Footer.css"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -19,8 +25,6 @@
       sizes="32x32"
       href="/Images/Merch/Team/Logo/Tab Logo.png"
     />
-
-    <script src="Script.js"></script>
 
     <title>S-I-S SQUAD</title>
   </head>
@@ -47,25 +51,27 @@
               </form>
             </div>
             <div class="tabs">
-              <a href="HTML/All.html" class="navigation-link All">View All</a>
-              <a href="#" class="navigation-link">Best Sellers!</a>
-              <a href="#" class="navigation-link">
-                <ion-icon name="cart"></ion-icon>
-                Basket</a
+              <a href="HTML/Header-links/All.html" class="navigation-link All"
+                >View All</a
               >
-              <a href="/HTML/Sign-in.html" class="navigation-link account">
+              <a href="#" class="navigation-link">Best Sellers!</a>
+              <button id="basket-button" class="navigation-link"></button>
+              <a
+                href="/HTML/Header-links/Sign-in.html"
+                class="navigation-link account"
+              >
                 <ion-icon name="person-circle-outline"></ion-icon>
                 Sign-in
               </a>
             </div>
           </div>
-          <div class="basket-tab">
+          <div id="basket-tab" class="hidden-tab">
             <span class="basket-contents">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="close"
+                id="close"
               >
                 <path
                   fill-rule="evenodd"
@@ -204,7 +210,7 @@
             </span>
             <span class="product-page-links">
               <a
-                href="/HTML/Products/N1ghtW0lf04/Hoodies/N1ghtW0lf04.html"
+                href="/HTML/Products/N1ghtW0lf04/Hoodies/N1ghtW0lf04-hoodie.html"
                 class="product-page-link"
                 >More Info</a
               >
@@ -580,6 +586,7 @@
         </div>
       </span>
     </footer>
+    <script src="Script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

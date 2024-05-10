@@ -3,9 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Style/Page styles/Banner&Footer.css" rel="stylesheet" />
-    <link href="/Style/Page styles/All-Products.css" rel="stylesheet" />
+    <link
+      href="/Style/Page styles/Banner-links/Banner&Footer.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/Style/Page styles/Banner-links/All-Products.css"
+      rel="stylesheet"
+    />
     <link href="/Style/Active/Active.css" rel="stylesheet" />
+    <link
+      href="/Style/Page styles/PDP/N1ghtW0lf/NW-PRODS.css"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -42,24 +52,20 @@
           <div class="tabs">
             <a href="/Home.html" class="navigation-link All">Home</a>
             <a href="#" class="navigation-link">Best Sellers!</a>
-            <a href="#" class="navigation-link">
-              <ion-icon name="cart"></ion-icon>
-              Basket</a
-            >
+            <button id="basket-button" class="navigation-link"></button>
             <a href="/HTML/Sign-in.html" class="navigation-link account">
               <ion-icon name="person-circle-outline"></ion-icon>
               Sign-in
             </a>
           </div>
         </div>
-
-        <div class="basket-tab">
+        <div id="basket-tab" class="hidden-tab">
           <span class="basket-contents">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="close"
+              id="close"
             >
               <path
                 fill-rule="evenodd"
@@ -77,65 +83,70 @@
       <div class="product-info-grid">
         <div class="Product-images">
           <div class="Product-img-large">
-            <img
-              src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie.png"
-              class="img-large"
-              alt="nightwolf hoodie"
-            />
+            <div id="img-large" class="NW-baseHoodie-img NW-Hoodie"></div>
           </div>
           <div class="Product-img-collage">
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie.png"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie.jpg"
                 class="img-small"
+                id="NW-grey-front"
               />
             </span>
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0LF04 SIDE SHOT.png"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodieGrey-Left.jpg"
                 class="img-small"
+                id="NW-grey-sideLeft"
               />
             </span>
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/side shot 2.png"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0LF04-grey-right.jpg"
                 class="img-small"
+                id="NW-grey-sideRight"
               />
             </span>
             <span class="collage-block">
               <img
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie front model.jpeg"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie-front-model.jpg"
                 class="img-small"
+                id="NW-black-front"
               />
             </span>
             <span class="collage-block">
               <img
                 class="img-small"
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie back model.jpeg"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie-back-model.jpg"
+                id="NW-black-back"
               />
             </span>
             <span class="collage-block block-middle-1">
               <img
                 class="img-small"
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie back flat.jpeg"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie-back-flat.jpg"
+                id="NW-black-flatBack"
               />
             </span>
             <span class="collage-block block-middle-2">
               <img
                 class="img-small"
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtWolf04 hoodie front flat.jpeg"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtWolf04-hoodieBlack-frontFlat.jpg"
+                id="NW-black-flatFront"
               />
             </span>
             <span class="collage-block block-middle-2">
               <img
                 class="img-small"
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/night side white.png"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodieWhite-Right.jpg"
+                id="NW-white-sideRight"
               />
             </span>
             <span class="collage-block block-middle-2">
               <img
                 class="img-small"
-                src="/Images/Merch/N1ghtW0lf04/Hoodie/white side night.png"
+                src="/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodiewhite-Left.jpg"
+                id="NW-white-sideLeft"
               />
             </span>
           </div>
@@ -314,7 +325,11 @@
     <footer class="footer">
       <span class="footer-content">
         <div class="Footer-img">
-          <img class="footer-logo" src="/Images/Footer Logo.png" alt="logo" />
+          <img
+            class="footer-logo"
+            src="/Images/Merch/Team/Logo/Footer Logo.png"
+            alt="logo"
+          />
         </div>
         <div class="footer-grid">
           <div class="footer-grid-left">
@@ -349,6 +364,8 @@
         </div>
       </span>
     </footer>
+    <script src="/JavaScript/NW-PDPHoodie-Images.js"></script>
+    <script src="/Script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

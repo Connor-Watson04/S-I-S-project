@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Style/Page styles/Banner&Footer.css" rel="stylesheet" />
-    <link href="/Style/Page styles/All-Products.css" rel="stylesheet" />
+    <link
+      href="/Style/Page styles/Banner-links/Banner&Footer.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/Style/Page styles/Banner-links/All-Products.css"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -47,10 +53,7 @@
           <div class="tabs">
             <a href="/Home.html" class="navigation-link All">Home</a>
             <a href="#" class="navigation-link">Best Sellers!</a>
-            <a class="navigation-link basket">
-              <ion-icon class="basket-icon" name="cart"></ion-icon>
-              Basket
-            </a>
+            <button id="basket-button" class="navigation-link"></button>
             <a href="/HTML/Sign-in.html" class="navigation-link account">
               <ion-icon name="person-circle-outline"></ion-icon>
               Sign-in
@@ -58,13 +61,13 @@
           </div>
         </div>
 
-        <div class="basket-tab">
+        <div id="basket-tab" class="hidden-tab">
           <span class="basket-contents">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="close"
+              id="close"
             >
               <path
                 fill-rule="evenodd"
@@ -248,7 +251,7 @@
             <div class="tab-header">
               <p class="product-header-size">N1ghtW0lf04 Cap</p>
               <span class="available-colours position-blocks">
-                <div class="coloured-blocks black-block"></div>
+                <div class="coloured-blocks blue-block"></div>
                 <div class="coloured-blocks white-block"></div>
                 <div class="coloured-blocks red-block"></div>
               </span>
@@ -685,7 +688,7 @@
                   </span>
                   <span class="product-page-links">
                     <a
-                      href="/HTML/Products/N1ghtW0lf04/Hoodies/N1ghtW0lf04.html"
+                      href="/HTML/Products/N1ghtW0lf04/Hoodies/N1ghtW0lf04-hoodie.html"
                       class="product-page-link"
                       >More Info</a
                     >
@@ -1114,6 +1117,7 @@
         </div>
       </span>
     </footer>
+    <script src="/Script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

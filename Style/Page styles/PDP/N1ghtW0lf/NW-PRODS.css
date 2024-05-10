@@ -1,0 +1,56 @@
+/* NW Hat */
+.LE-NW-base-image-hat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Femodel-Blue.jpg);
+}
+
+.LE-NW-grey-hat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-FrontView.jpg);
+}
+.LE-NW-blue-hat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-FrontView-blue.jpg);
+}
+.LE-NW-fem-greyHat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Femodel.jpg);
+}
+.LE-NW-fem-blueHat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Femodel-Blue.jpg);
+}
+.LE-NW-man-greyHat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Mamodel.jpg);
+}
+.LE-NW-man-blueHat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Mamodel-blue.jpg);
+}
+
+/* NW hoodie */
+
+.NW-baseHoodie-img {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie.jpg);
+}
+.NW-greyHoodie-front {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie.jpg);
+}
+.NW-greyHoodie-sideLeft {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodieGrey-Left.jpg);
+}
+.NW-greyHoodie-sideRight {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0LF04-grey-right.jpg);
+}
+.NW-blackHoodie-front {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie-front-model.jpg);
+}
+.NW-blackHoodie-back {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie-back-model.jpg);
+}
+.NW-blackHoodie-flatBack {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodie-back-flat.jpg);
+}
+.NW-blackHoodie-flatFront {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtWolf04-hoodieBlack-frontFlat.jpg);
+}
+.NW-whiteHoodie-sideRight {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodieWhite-Right.jpg);
+}
+.NW-whiteHoodie-sideLeft {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hoodie/PDP/N1ghtW0lf04-hoodiewhite-Left.jpg);
+}
