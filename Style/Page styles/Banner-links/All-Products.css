@@ -126,20 +126,20 @@
   outline: 1px solid #000;
 }
 
-.blue-block {
+#blue-block {
   background-color: #0a82d1;
 }
 
-.black-block {
+#black-block {
   background-color: #000;
 }
-.White-block {
+#White-block {
   background-color: #fff;
 }
-.Grey-block {
+#Grey-block {
   background-color: #555;
 }
-.red-block {
+#red-block {
   background-color: #922b2b;
 }
 .coloured-blocks:hover {
@@ -382,10 +382,15 @@
   display: grid;
   grid-template-columns: repeat(5, 100px);
   gap: 1rem;
+  position: absolute;
 }
+
+.three-lane-collage {
+  left: 200px;
+}
+
 .collage-block {
   width: 100px;
-
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
   height: 100px;
   border-radius: 5px;

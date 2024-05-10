@@ -22,6 +22,33 @@
   background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Mamodel-blue.jpg);
 }
 
+.LE-NW-fem-whiteHat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Femodel-White.jpg);
+}
+
+.LE-NW-man-whiteHat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-Cap-Mamodel-White.jpg);
+}
+
+.LE-NW-white-hat {
+  background-image: url(/Images/Merch/N1ghtW0lf04/Hats/PDP/LE-Nightwolf-cap-front-White.png);
+}
+
+/* blocks */
+
+.hidden-images {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.selected-block {
+  outline: 3px solid red;
+}
+
+.selected-image {
+  outline: 2px solid red;
+}
+
 /* NW hoodie */
 
 .NW-baseHoodie-img {
