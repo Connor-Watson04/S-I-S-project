@@ -1,0 +1,65 @@
+/* basket drawer */
+
+#basket-button {
+  padding: 10px 2rem;
+}
+
+#basket-tab {
+  position: absolute;
+  z-index: 5;
+  background-color: #fff;
+  width: 370px;
+  height: 700px;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+.empty-cart {
+  font-size: 20px;
+  color: #808080;
+  position: relative;
+  top: 280px;
+  left: 100px;
+}
+.checkout-btn {
+  background-color: #cf0d0d;
+  color: #ebebeb;
+  padding: 0.6rem 5rem;
+  position: absolute;
+  top: 650px;
+  left: 90px;
+  cursor: pointer;
+}
+.hidden-tab {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* product element in basket styling */
+
+.cartProduct-container {
+  outline: 1px solid black;
+  height: 120px;
+  margin: 20px 0 0 0;
+}
+
+.cartProduct-info {
+  display: flex;
+  flex-direction: row;
+}
+.cartProduct-img {
+  height: 100%;
+  width: 120px;
+}
+
+.cartProduct-data p {
+  margin: 0;
+  width: 100%;
+  padding-left: 2px;
+}
+
+.cartProduct-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}

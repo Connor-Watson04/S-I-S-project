@@ -25,7 +25,7 @@
       sizes="32x32"
       href="/Images/Merch/Team/Logo/Tab Logo.png"
     />
-
+    <link href="/Style/Page styles/Banner-links/Basket.css" rel="stylesheet" />
     <title>S-I-S SQUAD</title>
   </head>
   <body>
@@ -79,7 +79,28 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <p class="empty-cart">Your Cart is empty</p>
+              <div class="cartProduct-container">
+                <div class="cartProduct-info">
+                  <img
+                    src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie.png"
+                    alt="product image"
+                    class="cartProduct-img"
+                  />
+                  <div class="cartProduct-data">
+                    <h3 id="cartProduct-title" class="cartProduct-title">
+                      Classic N1ghtW0lf04 Hoodie
+                    </h3>
+                    <p class="cartProduct-price" id="cartProduct-price">
+                      £44.99
+                    </p>
+                    <p class="productSize" id="productSize">Size: M</p>
+                    <p class="product-quantity" id="productQuantity">
+                      Quantity: 9
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <p class="empty-cart">Your Cart is empty</p> -->
               <button class="checkout-btn">checkout</button>
             </span>
           </div>
@@ -177,9 +198,17 @@
             src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie.png"
             class="hoodie"
             alt="hoodie"
+            id="product-image"
+            name="image"
           />
           <div class="Product-description">
-            <p class="product-header">Classic N1ghtW0lf04 Hoodie</p>
+            <p
+              name="Classic-NW-Hoodie"
+              id="product-Title"
+              class="product-header"
+            >
+              Classic N1ghtW0lf04 Hoodie
+            </p>
             <span class="shipping">
               <svg
                 class="lorrie"
@@ -206,7 +235,7 @@
             </span>
             <span class="pricing">
               <p class="original-price">£54.99</p>
-              <p class="sale-price">£44.99</p>
+              <p name="price" id="product-price" class="sale-price">£44.99</p>
             </span>
             <span class="product-page-links">
               <a
@@ -215,7 +244,7 @@
                 >More Info</a
               >
             </span>
-            <form class="product-form">
+            <form id="product-form" class="product-form">
               <div class="form-grid">
                 <div class="clothes-sizing-label">
                   <label class="product-label size-label" for="Sizes"
@@ -229,10 +258,10 @@
                     class="product-input sizes-input"
                   >
                     <option>More options</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="extra-large">XL</option>
                   </select>
                 </div>
                 <div class="clothes-quantity-label">
@@ -248,12 +277,12 @@
                     name="quantity"
                     min="1"
                     max="10"
-                    value="1"
+                    placeholder="1"
                   />
                 </div>
               </div>
               <div class="product-btn">
-                <button class="cart-btn">
+                <button type="button" id="add-Cart" class="cart-btn">
                   <ion-icon name="cart"></ion-icon>
                   Add to cart
                 </button>
@@ -595,5 +624,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="basket-createItems.js"></script>
   </body>
 </html>
