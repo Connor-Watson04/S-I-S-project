@@ -18,7 +18,7 @@
   font-size: 20px;
   color: #808080;
   position: relative;
-  top: 280px;
+  top: 150px;
   left: 100px;
 }
 .checkout-btn {
@@ -38,7 +38,6 @@
 /* product element in basket styling */
 
 .cartProduct-container {
-  outline: 1px solid black;
   height: 120px;
   margin: 20px 0 0 0;
 }
@@ -46,6 +45,8 @@
 .cartProduct-info {
   display: flex;
   flex-direction: row;
+  outline: 1px solid black;
+  margin-bottom: 5px;
 }
 .cartProduct-img {
   height: 100%;
