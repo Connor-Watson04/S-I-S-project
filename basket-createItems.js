@@ -1,33 +1,39 @@
-const addToCartBtn = document.getElementById("add-Cart");
-const form = document.getElementById("product-form");
-const cartProductContainer = document.getElementById("cartProduct-container");
-const price = document.getElementById("product-price");
-const productName = document.getElementById("product-Title");
-const productImage = document.getElementById("product-image");
-// function add to cart
+// select relevant elements for ALL product tabs
 
-function storeCartData() {
-  const user = {
-    image: productImage.src,
-    title: productName.textContent,
+const cartProductContainers = document.querySelectorAll(
+  "#cartProduct-container"
+);
+const addToCartBtns = document.querySelectorAll(".add-Cart");
+const forms = document.querySelectorAll(".product-form");
+const prices = document.querySelectorAll(".product-price");
+const productNames = document.querySelectorAll(".product-Title");
+const productImages = document.querySelectorAll(".product-image");
+
+// function to store cart data
+
+function storeCartData(image, title, price, form) {
+  let user = {
+    image: image.src,
+    title: title.textContent,
     price: price.textContent,
     Sizes: form.Sizes.value,
     quantity: form.quantity.value,
   };
+  console.log(user);
   let productCartData = JSON.stringify(user);
   localStorage.setItem("productCart data", productCartData);
 }
 
 // function to create product cards in basket tray
-function createBasketProduct() {
+function createBasketProduct(container) {
   // remove empty cart text
   const emptyCart = document.querySelector(".empty-cart");
   emptyCart.textContent = "";
 
   // get data from local storage
-  productCartData = JSON.parse(localStorage.getItem("productCart data"));
+  const productCartData = JSON.parse(localStorage.getItem("productCart data"));
 
-  //   create elements & use objects to get data
+  // create elements & use objects to get data
   const cartProductInfo = document.createElement("div");
   cartProductInfo.classList.add("cartProduct-info");
 
@@ -47,34 +53,49 @@ function createBasketProduct() {
   cartProductPrice.classList.add("cartProduct-price");
 
   const cartProductSize = document.createElement("p");
-  cartProductSize.textContent = `Size:${productCartData.Sizes}`;
+  cartProductSize.textContent = `Size: ${productCartData.Sizes}`;
   cartProductSize.classList.add("productSize");
 
   const cartProductQuantity = document.createElement("p");
-  cartProductQuantity.textContent = `Quantity:${productCartData.quantity}`;
+  cartProductQuantity.textContent = `Quantity: ${productCartData.quantity}`;
   cartProductQuantity.classList.add("product-quantity");
 
-  //   build product cards in basket by appending
+  const cartDeleteItem = document.createElement("i");
+  cartDeleteItem.classList.add("fa-solid", "fa-trash-can", "cartDelete-item");
 
+  // build product cards in basket by appending
   cartProductData.append(
     cartProductTitle,
     cartProductPrice,
     cartProductSize,
-    cartProductQuantity
+    cartProductQuantity,
+    cartDeleteItem
   );
 
   cartProductInfo.append(cartProductImg, cartProductData);
 
-  cartProductContainer.appendChild(cartProductInfo);
+  container.appendChild(cartProductInfo);
 }
 
-function addToCart(e) {
+// function to add to cart
+function addToCart(e, image, title, price, form, container) {
   e.preventDefault();
-  // add cart to local storage
-  storeCartData();
-  //   create basket product card
-  createBasketProduct();
+  // Add cart to local storage
+  storeCartData(image, title, price, form);
+  // Create basket product card
+  createBasketProduct(container);
 }
 
-//event listeners
-addToCartBtn.addEventListener("click", addToCart);
+//event listener for each product tab to actually add to basket
+addToCartBtns.forEach((btn, index) => {
+  btn.addEventListener("click", (e) =>
+    addToCart(
+      e,
+      productImages[index],
+      productNames[index],
+      prices[index],
+      forms[index],
+      cartProductContainers[0]
+    )
+  );
+});

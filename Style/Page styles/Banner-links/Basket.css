@@ -64,3 +64,14 @@
   font-weight: 600;
   margin: 10px 0;
 }
+
+.cartDelete-item {
+  position: relative;
+  right: -230px;
+  top: -35px;
+  cursor: pointer;
+}
+
+.cartDelete-item:hover {
+  color: red;
+}

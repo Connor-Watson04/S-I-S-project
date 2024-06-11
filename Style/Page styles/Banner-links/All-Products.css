@@ -220,10 +220,11 @@
 .Deals {
   position: relative;
   top: -370px;
-  left: 90px;
+  left: -95px;
+  transform: rotate(-49deg);
   text-align: center;
   background-color: rgb(255, 77, 187);
-  transform: rotate(45deg);
+
   color: #fff;
   font-weight: 700;
 }
@@ -253,8 +254,8 @@
   left: -15px;
 }
 .Warning-banner-deals {
-  top: -580px;
-  left: 100px;
+  top: -575px;
+  left: -110px;
 }
 .Warning-banner-limited {
   top: -565px;
