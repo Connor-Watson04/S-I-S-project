@@ -17,7 +17,7 @@ function storeCartData(image, title, price, form) {
     Sizes: form.Sizes.value,
     quantity: form.quantity.value,
   };
-  console.log(user);
+
   let productCartData = JSON.stringify(user);
   localStorage.setItem("productCart data", productCartData);
 }
