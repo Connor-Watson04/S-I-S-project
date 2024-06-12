@@ -4,6 +4,12 @@
   padding: 10px 2rem;
 }
 
+.basket-contents {
+  height: 85%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 #basket-tab {
   position: absolute;
   z-index: 5;
@@ -26,7 +32,7 @@
   color: #ebebeb;
   padding: 0.6rem 5rem;
   position: absolute;
-  top: 650px;
+  top: 670px;
   left: 90px;
   cursor: pointer;
 }
@@ -39,14 +45,14 @@
 
 .cartProduct-container {
   height: 120px;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .cartProduct-info {
   display: flex;
   flex-direction: row;
-  outline: 1px solid black;
-  margin-bottom: 5px;
+  border: 1px solid black;
+  margin-bottom: 3px;
 }
 .cartProduct-img {
   height: 100%;
@@ -60,18 +66,21 @@
 }
 
 .cartProduct-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 10px 0;
 }
 
-.cartDelete-item {
+.deleteCart-btn {
+  background: none;
+  outline: none;
+  border: none;
   position: relative;
-  right: -230px;
-  top: -35px;
+  left: 200px;
   cursor: pointer;
+  bottom: 35px;
 }
 
-.cartDelete-item:hover {
+.deleteCart-btn:hover {
   color: red;
 }
