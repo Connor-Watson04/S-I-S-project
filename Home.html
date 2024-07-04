@@ -83,12 +83,30 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <div class="basket-contents">
-              <div
-                id="cartProduct-container"
-                class="cartProduct-container"
-              ></div>
-              <p class="empty-cart">Your Cart is empty</p>
+            <div id="basketContent" class="basket-contents">
+              <div id="cartProduct-container" class="cartProduct-container">
+                <div class="cartProduct-info">
+                  <img
+                    src="/Images/Merch/N1ghtW0lf04/Hoodie/Connor Hoodie back.jpg"
+                    class="cartProduct-img"
+                  />
+                  <div class="cartProduct-data">
+                    <h3 class="cartProduct-title">
+                      Classic N1ghtW0lf04 Hoodie
+                    </h3>
+                    <p class="cartProduct-size">Size: small</p>
+                    <p class="cartProduct-quantity">Quantity: 1</p>
+                    <p class="cartProduct-price">Price: £44.99</p>
+                    <button class="deleteCart-btn">
+                      <i class="fa-solid fa-trash-can cartDelete-item"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p id="emptyCart" class="empty-cart" hidden>Your Cart is empty</p>
+            </div>
+            <div class="basket-checkout">
+              <p id="totalPrice">Total: £00.00</p>
               <button class="checkout-btn">checkout</button>
             </div>
           </div>
@@ -183,13 +201,17 @@
       <div class="Merch-grid">
         <div class="Product-tab">
           <img
-            src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie.png"
             class="hoodie product-image"
+            src="/Images/Merch/N1ghtW0lf04/Hoodie/N1ghtW0lf04 hoodie.png"
             alt="hoodie"
             name="image"
+            id="productImage"
           />
           <div class="Product-description">
-            <p name="Classic-NW-Hoodie" class="product-header product-Title">
+            <p
+              name="Classic-NW-Hoodie title"
+              class="product-header product-Title"
+            >
               Classic N1ghtW0lf04 Hoodie
             </p>
             <span class="shipping">
@@ -218,7 +240,14 @@
             </span>
             <span class="pricing">
               <p class="original-price">£54.99</p>
-              <p name="price" class="sale-price product-price">£44.99</p>
+              <option
+                id="product-price"
+                name="price"
+                value="44.99"
+                class="sale-price product-price"
+              >
+                £44.99
+              </option>
             </span>
             <span class="product-page-links">
               <a
@@ -239,11 +268,12 @@
                     required
                     name="Sizes"
                     class="product-input sizes-input"
+                    id="sizes"
                   >
-                    <option value="small">S</option>
-                    <option value="medium">M</option>
-                    <option value="large">L</option>
-                    <option value="extra-large">XL</option>
+                    <option value="Small">S</option>
+                    <option value="Medium">M</option>
+                    <option value="Large">L</option>
+                    <option value="Extra-Large">XL</option>
                   </select>
                 </div>
                 <div class="clothes-quantity-label">
@@ -255,7 +285,7 @@
                   <input
                     required
                     type="number"
-                    class="product-input quantity"
+                    class="product-input product-quantity"
                     name="quantity"
                     min="1"
                     max="10"
@@ -265,7 +295,7 @@
                 </div>
               </div>
               <div class="product-btn">
-                <button type="button" class="add-Cart cart-btn">
+                <button type="button" id="addToCart" class="add-Cart cart-btn">
                   <ion-icon name="cart"></ion-icon>
                   Add to cart
                 </button>
@@ -361,7 +391,7 @@
                 </div>
               </div>
               <div class="product-btn">
-                <button type="button" class="add-Cart cart-btn">
+                <button id="addToCart" type="button" class="add-Cart cart-btn">
                   <ion-icon name="cart"></ion-icon>
                   Add to cart
                 </button>

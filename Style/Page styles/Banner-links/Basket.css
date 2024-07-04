@@ -10,10 +10,14 @@
   overflow-x: hidden;
 }
 
+.basket-contents::-webkit-scrollbar {
+  display: none;
+}
+
 #basket-tab {
   position: absolute;
   z-index: 5;
-  background-color: #fff;
+  background-color: #dbd0d0;
   width: 370px;
   height: 700px;
   top: 0;
@@ -22,7 +26,7 @@
 }
 .empty-cart {
   font-size: 20px;
-  color: #808080;
+  color: #ffffff;
   position: relative;
   top: 150px;
   left: 100px;
@@ -30,15 +34,19 @@
 .checkout-btn {
   background-color: #cf0d0d;
   color: #ebebeb;
-  padding: 0.6rem 5rem;
-  position: absolute;
-  top: 670px;
-  left: 90px;
+  padding: 0.4rem 4rem;
   cursor: pointer;
 }
 .hidden-tab {
   opacity: 0;
   visibility: hidden;
+}
+
+.basket-checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 /* product element in basket styling */
