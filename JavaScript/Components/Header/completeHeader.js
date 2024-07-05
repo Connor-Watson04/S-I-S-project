@@ -1,8 +1,8 @@
 import mainHeader from "./mainHeader.js"
 
 export default {
-    components: { mainHeader },
-    template: `     
+  components: { mainHeader },
+  template: `     
         <mainHeader></mainHeader>
       `,
 }
