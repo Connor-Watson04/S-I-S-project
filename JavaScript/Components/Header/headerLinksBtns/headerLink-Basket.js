@@ -1,6 +1,6 @@
 export default {
     template: `
-        <div>
+     
             <button
                 @click="openBasket"
                 id="basket-button"
@@ -9,7 +9,7 @@ export default {
                 <div id="basketContent"></div>
                 <button id="close">Close</button>
             </div>
-        </div>
+     
     `,
     props: {
         title: {

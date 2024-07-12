@@ -12,7 +12,7 @@ function toggleDarkLightMode(isLight) {
         ? "rgb(225 225 225 / 50%)"
         : "rgb(0 0 0 / 50%)";
 
-    toggleIcon.children[0].textContent = isLight ? "Light Mode" : "Dark Mode";
+    // toggleIcon.children[0].textContent = isLight ? "Light Mode" : "Dark Mode";
     isLight
         ? toggleIcon.children[1].classList.replace("fa-moon", "fa-sun")
         : toggleIcon.children[1].classList.replace("fa-sun", "fa-moon");
