@@ -53,3 +53,4 @@ function updateCartDOM() {
 
 // event listeners
 cartBtn.addEventListener("click", updateCartDOM);
+

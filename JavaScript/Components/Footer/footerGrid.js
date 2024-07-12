@@ -1,5 +1,5 @@
 export default {
-    template: `
+  template: `
     
     <div class="footer-grid">
         <div class="footer-grid-left">
@@ -49,7 +49,7 @@ export default {
             >
             <a
               class="social-links"
-              href="#"
+          
               >ibedrippinYT</a
             >
           </div>

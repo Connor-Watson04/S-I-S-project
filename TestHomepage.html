@@ -24,24 +24,39 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet" />
-    <link
-      href="/Style/Page styles/Banner-links/Banner&Footer.css"
-      rel="stylesheet" />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="/Images/Merch/Team/Logo/Tab Logo.png" />
     <link
+      href="/Dark&Light.css"
+      rel="stylesheet" />
+    <link
       href="/Style/Page styles/Banner-links/Basket.css"
       rel="stylesheet" />
     <script src="https://unpkg.com/vue@3"></script>
     <title>S-I-S SQUAD</title>
+
+    <style></style>
   </head>
   <body>
     <section class="landing-view">
       <div class="content">
-        <completeHeader></completeHeader>
+        <nav id="nav">
+          <completeHeader></completeHeader>
+        </nav>
+      </div>
+      <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+          <span class="toggle-text"></span>
+          <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+          <input type="checkbox" />
+          <div class="slider round"></div>
+        </label>
       </div>
       <!-- <div
         id="basket-tab"
@@ -90,6 +105,89 @@
         </div>
       </div> -->
     </section>
+
+    <div class="Welcome">
+      <div class="welcome-content">
+        <div class="grid-left">
+          <h1 class="heading-primary">Welcome to S-I-S SQUAD Merch Line</h1>
+          <p class="why">
+            Here at S-I-S SQUAD we decided to provide you with some
+            <strong>DRIPPY</strong> merch. <br />We figured we enjoy content
+            creation so much why not give back to our squad.
+          </p>
+          <p class="partnership">
+            We managed to fing ourselves a great partnership with
+            <a
+              href="https://www.dubby.gg"
+              class="dubby"
+              >DUBBY</a
+            >
+            who provide powdered based energy drinks to your door for cheaper
+            than their competitors.
+          </p>
+          <p class="shameless-plug">
+            You can use Code S-I-S SQUAD at checkout for 10% off. (This is auto
+            applied in the link)
+          </p>
+          <div class="comment">
+            <div class="quote">
+              <p class="quote-text">
+                "Best drink i've ever had its cheaper and healthier than others,
+                would definitley recommend"
+              </p>
+            </div>
+            <div class="quote-flex">
+              <div class="quote-picture">
+                <img
+                  class="quote-logo"
+                  src="Images/quote img.png" />
+              </div>
+              <div class="quotee">
+                <p class="name">N1ghtW0lf04</p>
+                <p class="Relation">S-I-S SQUAD Co. Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="whole-right">
+          <div class="grid-right">
+            <div class="dualProduct-grid">
+              <img
+                src="Images/Merch/N1ghtW0lf04/Hoodie/Connor Hoodie back.png"
+                alt="hoodie"
+                class="dualProduct-image" />
+              <span class="dualProduct-description">
+                <p class="Hoodie-text">Simple N1ghtW0lf04 Hoodie</p>
+                <button class="Get">Get yours now!</button>
+                <p class="new-banner">Brand New!</p>
+              </span>
+            </div>
+            <div class="dualProduct-grid">
+              <img
+                class="dualProduct-image"
+                src="Images/Merch/JellyBelly/Hoodie/JellyBellyyt eco hoodie.png"
+                alt="Tshirt" />
+              <span class="dualProduct-description">
+                <p class="Hoodie-text">Simple JellyBellyYT Hoodie</p>
+                <button class="Get">Get yours now!</button>
+                <p class="new-banner">Brand New!</p>
+              </span>
+            </div>
+          </div>
+          <div class="pagination">
+            <ion-icon
+              class="pag-icon"
+              name="caret-back-outline"></ion-icon>
+            <button class="pag-btn btn-1">1</button>
+            <button class="pag-btn btn-2">2</button>
+            <ion-icon
+              class="pag-icon"
+              name="caret-forward-outline"></ion-icon>
+          </div>
+          <!-- <div class="scroll"></div> -->
+        </div>
+      </div>
+    </div>
 
     <section class="Body-content">
       <div class="Merch-header">
@@ -548,6 +646,8 @@
     <footer class="footer">
       <completeFooter></completeFooter>
     </footer>
+    <script src="/dark-lightMode.js"></script>
+
     <script type="module">
       import completeHeader from "./JavaScript/Components/Header/completeHeader.js";
       Vue.createApp(completeHeader).mount(".content");

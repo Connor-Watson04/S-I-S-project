@@ -210,9 +210,9 @@
 .free {
   margin: 0;
 }
-.Tshirt,
-.Hoodie {
-  height: 250px;
+.dualProduct-image {
+  height: 260px;
+  width: 260px;
 }
 .Hoodie-text {
   margin: 10px 0 5px 0;
@@ -228,6 +228,19 @@
   color: #fff;
   font-weight: 700;
 }
+
+.new-banner {
+  background-color: rgb(51, 86, 245);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: -315px;
+  padding: 0 1.4rem;
+  left: -95px;
+  transform: rotate(-50deg);
+}
+
 .Limited {
   background-color: rgb(57, 196, 206);
   color: #fff;
@@ -238,15 +251,21 @@
   left: -95px;
   transform: rotate(-49deg);
 }
-.FerralWolf-jumper,
-.ibedrippinYT-Tshirt,
-.N1ghtWolf-hoodie {
+.dualProduct-grid {
   overflow: hidden;
   width: 225px;
   border-radius: 11px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-  padding: 0 1.2rem 1.2rem 1.2rem;
+  width: 250px;
   height: 350px;
+  background-color: var();
+}
+
+.dualProduct-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Tshirt {
